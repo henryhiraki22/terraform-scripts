@@ -42,11 +42,3 @@ resource "aws_network_interface_sg_attachment" "k8s_attachment" {
     security_group_id = aws_security_group.web-node.id
     network_interface_id = aws_instance.k8s-nodes[count.index].primary_network_interface_id
 }
-
-
-
-
-
-
-
-
